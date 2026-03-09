@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="About — NexWave Technologies"
+  description="NexWave Technologies builds purpose-built modules that extend Ignition's industrial messaging capabilities."
+>
+  <Header />
+  <main>
+    <!-- Hero -->
+    <section class="relative overflow-hidden py-16 sm:py-20 lg:py-28">
+      <div class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute left-1/2 top-0 h-[600px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-600/10 blur-[120px]"></div>
+      </div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="font-display mb-6 text-sm tracking-[4.5px] uppercase text-text-muted">
+            About Us
+          </p>
+          <h1 class="font-display text-4xl font-bold tracking-tight text-text-primary sm:text-5xl">
+            Extending Ignition,
+            <span class="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+              One Module at a Time
+            </span>
+          </h1>
+          <p class="mt-6 text-lg leading-relaxed text-text-secondary">
+            NexWave Technologies is focused on building high-quality, purpose-built modules
+            that extend Inductive Automation's Ignition platform into new messaging ecosystems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="border-t border-surface-700/50 bg-surface-900 py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl">
+          <h2 class="font-display text-3xl font-bold text-primary-400 sm:text-4xl text-center mb-16">
+            What Drives Us
+          </h2>
+
+          <div class="grid gap-10 md:grid-cols-2">
+            <!-- Card 1 -->
+            <div class="rounded-xl border border-surface-700/50 bg-surface-800/50 p-8">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-600/10">
+                <svg class="h-6 w-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="font-display text-lg font-semibold text-text-primary mb-2">Native Integration</h3>
+              <p class="text-sm leading-relaxed text-text-secondary">
+                We believe in building modules that feel native to Ignition — no hacks, no
+                workarounds. Our solutions work within the platform's Event Streams framework
+                so integrators can configure, not code.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="rounded-xl border border-surface-700/50 bg-surface-800/50 p-8">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
+                <svg class="h-6 w-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="font-display text-lg font-semibold text-text-primary mb-2">Industrial Reliability</h3>
+              <p class="text-sm leading-relaxed text-text-secondary">
+                Industrial systems demand reliability. Every module we build is designed for
+                production environments — durable consumers, acknowledged delivery, and
+                configurations that survive restarts.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="rounded-xl border border-surface-700/50 bg-surface-800/50 p-8">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary-600/10">
+                <svg class="h-6 w-6 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                </svg>
+              </div>
+              <h3 class="font-display text-lg font-semibold text-text-primary mb-2">Open Ecosystems</h3>
+              <p class="text-sm leading-relaxed text-text-secondary">
+                We connect Ignition to the broader messaging world — starting with NATS.
+                Our goal is to give integrators the freedom to choose the right
+                infrastructure for the job.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="rounded-xl border border-surface-700/50 bg-surface-800/50 p-8">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
+                <svg class="h-6 w-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 class="font-display text-lg font-semibold text-text-primary mb-2">Integrator-First</h3>
+              <p class="text-sm leading-relaxed text-text-secondary">
+                We build for the people who build the systems. Clean configuration interfaces,
+                clear documentation, and licensing that aligns with Ignition's model — because
+                integrators deserve tools that just work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-display text-3xl font-bold text-primary-400 sm:text-4xl">
+            Let's Talk
+          </h2>
+          <p class="mt-4 text-lg text-text-secondary">
+            Have a question about our modules or want to discuss your integration needs?
+          </p>
+          <a
+            href="mailto:contact@nexwavetechnologies.com"
+            class="mt-8 inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-500 hover:shadow-primary-500/30"
+          >
+            Get in Touch
+            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>

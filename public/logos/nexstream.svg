@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Wave mark -->
+  <path d="M4 14Q11 6 18 14Q25 22 32 14" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M4 22Q11 14 18 22Q25 30 32 22" stroke="#34d399" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M4 30Q11 22 18 30Q25 38 32 30" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+  <!-- "Nex" bold -->
+  <text x="40" y="30" font-family="Trebuchet MS, Lucida Grande, sans-serif" font-size="22" font-weight="700" fill="#f0fdf4">Nex</text>
+  <!-- "Stream" light -->
+  <text x="80" y="30" font-family="Trebuchet MS, Lucida Grande, sans-serif" font-size="22" font-weight="300" fill="#f0fdf4">Stream</text>
+</svg>

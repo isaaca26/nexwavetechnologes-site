@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import CompactHero from '../components/CompactHero.astro';
+import ProductShowcase from '../components/ProductShowcase.astro';
+import CallToAction from '../components/CallToAction.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="NexWave Technologies — Purpose-Built Modules for Ignition"
+  description="NexWave Technologies builds powerful modules that extend Ignition's capabilities — from industrial messaging and connectivity to data management and beyond."
+>
+  <Header />
+  <main>
+    <CompactHero />
+    <ProductShowcase />
+    <CallToAction />
+  </main>
+  <Footer />
+</BaseLayout>

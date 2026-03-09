@@ -1,0 +1,66 @@
+---
+import { products } from "../data/products";
+const base = import.meta.env.BASE_URL;
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-surface-700/50 bg-surface-900">
+  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+    <div
+      class="flex flex-col items-center gap-6 sm:flex-row sm:justify-between"
+    >
+      <div class="flex flex-col items-center gap-3 sm:items-start">
+        <div class="flex items-center gap-2">
+          <svg class="h-5 w-5" viewBox="0 0 32 32" fill="none">
+            <path
+              d="M4 10Q10 4 16 10Q22 16 28 10"
+              stroke="#3b82f6"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"></path>
+            <path
+              d="M4 16Q10 10 16 16Q22 22 28 16"
+              stroke="#34d399"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"></path>
+            <path
+              d="M4 22Q10 16 16 22Q22 28 28 22"
+              stroke="#3b82f6"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"
+              opacity="0.4"></path>
+          </svg>
+          <span class="font-display text-lg text-text-primary">
+            <span class="font-bold">Nex</span><span class="font-light"
+              >Wave</span
+            >
+            <span class="font-light text-text-muted"> Technologies</span>
+          </span>
+        </div>
+        <span
+          class="font-display text-xs tracking-[4.5px] uppercase text-text-muted"
+        >
+          Built for What's Nex
+        </span>
+        <ul class="mt-1 flex gap-4 text-sm">
+          {products.map((p) => (
+            <li>
+              <a
+                href={`${base}products/${p.slug}`}
+                class="flex items-center gap-2 text-text-muted transition-colors hover:text-primary-400"
+              >
+                <img src={`${base}${p.logo.replace(/^\//, '')}`} alt={p.name} class="h-5 w-5" />
+                {p.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <p class="text-sm text-text-muted">
+        &copy; {year} NexWave Technologies. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
