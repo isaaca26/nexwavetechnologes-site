@@ -36,7 +36,6 @@ const year = new Date().getFullYear();
             <span class="font-bold">Nex</span><span class="font-light"
               >Wave</span
             >
-            <span class="font-light text-text-muted"> Technologies</span>
           </span>
         </div>
         <span
@@ -44,19 +43,6 @@ const year = new Date().getFullYear();
         >
           Built for What's Nex
         </span>
-        <ul class="mt-1 flex gap-4 text-sm">
-          {products.map((p) => (
-            <li>
-              <a
-                href={`${base}products/${p.slug}`}
-                class="flex items-center gap-2 text-text-muted transition-colors hover:text-primary-400"
-              >
-                <img src={`${base}${p.logo.replace(/^\//, '')}`} alt={p.name} class="h-5 w-5" />
-                {p.name}
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
       <p class="text-sm text-text-muted">
         &copy; {year} NexWave Technologies. All rights reserved.
