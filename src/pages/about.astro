@@ -118,7 +118,7 @@ import Footer from '../components/Footer.astro';
             Have a question about our modules or want to discuss your integration needs?
           </p>
           <a
-            href="mailto:contact@nexwavetechnologies.com"
+            href={`${import.meta.env.BASE_URL}contact`}
             class="mt-8 inline-flex items-center rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-all hover:bg-primary-500 hover:shadow-primary-500/30"
           >
             Get in Touch
